@@ -1,0 +1,51 @@
+generated: '2026-09-07'
+method: probed
+source: live GET probes of the named /.well-known/ path list on every host this record knows
+note: >-
+  Every named path returned 404 on every reachable AdaptX host. No WellKnown or SecurityTxt pointer
+  is emitted in apis.yml, because this file records an ABSENCE, not a served surface. Only two
+  AdaptX hosts resolve in public DNS (adaptx.com and www.adaptx.com, both Webflow-fronted); the
+  remaining names in certificate transparency (development, internal, ops, old-vpn,
+  remote-access.adaptx.com) are private infrastructure and were not probed for discovery documents.
+  There are no API baseURL hosts and no OpenAPI servers[] hosts to probe — AdaptX publishes no
+  machine-readable API description.
+hosts:
+- host: www.adaptx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: adaptx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+non_resolving_hosts:
+- api.adaptx.com
+- app.adaptx.com
+- developer.adaptx.com
+- docs.adaptx.com
+- portal.adaptx.com
+- secure.adaptx.com
+- my.adaptx.com

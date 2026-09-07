@@ -1,0 +1,68 @@
+# AdaptX
+
+> AdaptX is a Seattle-based clinical performance management company (founded 2016 as MDMetrix,
+> renamed AdaptX in 2021). Its self-serve platform reads a hospital's existing electronic medical
+> record data and turns it into near-real-time analytics that clinical, quality, operational and
+> finance leaders use to measure and reduce clinical variation. Delivered as hosted SaaS on AWS to
+> contracted health systems.
+
+Generated: 2026-09-07
+Method: generated
+Source: apis.yml + artifacts in this API Evangelist profile repository (all/adaptx)
+
+## API surface
+
+AdaptX publishes **no public API**. As of 2026-09-07 there is no developer portal, no API
+reference, no OpenAPI / AsyncAPI / GraphQL SDL / Postman collection, no SDK in any public package
+registry, no MCP server, and no A2A agent card. Integration with a health system's EMR is performed
+by AdaptX under contract, not through a published, self-serve developer surface.
+
+- Contract discovery probes (all 404 or non-resolving): /openapi.json, /openapi.yaml,
+  /swagger.json, /v1/openapi.json, /api-docs, /redoc, /llms.txt on www.adaptx.com; api., app.,
+  developer., docs., portal., secure., my.adaptx.com do not resolve in public DNS.
+- /.well-known/: security.txt, openid-configuration, oauth-authorization-server, api-catalog,
+  ai-plugin.json, agent-card.json, agent.json all return 404.
+
+## Company
+
+- [Home](https://www.adaptx.com/): product overview and customer outcomes.
+- [Solutions](https://www.adaptx.com/solutions): clinical variation management across specialties.
+- [Case studies](https://www.adaptx.com/case-studies): ~24 published outcome studies (surgical
+  capacity, ED time-to-triage, length of stay, anesthetic greenhouse-gas reduction, health equity).
+- [Customer testimonials](https://www.adaptx.com/customer-testimonials)
+- [Leadership](https://www.adaptx.com/leadership)
+- [News and press](https://www.adaptx.com/news)
+- [Careers](https://www.adaptx.com/careers)
+- [Privacy policy](https://www.adaptx.com/privacy-policy)
+- [Request info](https://www.adaptx.com/request-info) / [Request a demo](https://www.adaptx.com/request-demo)
+- [GitHub organization](https://github.com/MDmetrix): one public repository, a fork of the
+  third-party `pycognito` library. No first-party SDK.
+
+## Commercial
+
+- No published pricing and no plans. Enterprise contract entered via a demo/contact form.
+- No self-serve sign-up, trial, or free tier.
+
+## Compliance and security
+
+- SOC 2 Type II attestation claimed via an AICPA SOC badge in the site footer. No trust center,
+  no published report scope, auditor, or period.
+- Processes protected health information from hospital EMR systems; no public HIPAA statement
+  or BAA page was found.
+- No security.txt, no published vulnerability disclosure policy, no bug bounty program.
+- TLS 1.3 with HSTS (max-age 31536000) on www.adaptx.com; SPF and DMARC present on adaptx.com
+  (DMARC policy `none`); DNSSEC not enabled; no CAA records.
+
+## Artifacts in this profile
+
+- conformance/adaptx-conformance.yml — published compliance claims (SOC 2 Type II) and honest gaps.
+- plans/adaptx-plans-pricing.yml — plan_count 0, contact-sales only.
+- rate-limits/adaptx-rate-limits.yml — limit_count 0, no documented API.
+- security/adaptx-domain-security.yml — probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC.
+- well-known/adaptx-well-known.yml — recorded absence of every named discovery document.
+
+## Notes for agents
+
+This is an independent third-party profile maintained by API Evangelist. It is not operated by
+AdaptX. Do not infer an API endpoint, base URL, authentication scheme, or tool from this file:
+none is published. Corrections: https://github.com/api-evangelist/adaptx/issues

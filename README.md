@@ -64,5 +64,15 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AdaptX is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+AdaptX is a Seattle-based clinical performance management company (founded 2016 as MDMetrix, renamed
+AdaptX in 2021) whose self-serve platform reads a hospital's existing electronic medical record data and
+turns it into near-real-time analytics that clinical, quality, operational and finance leaders use to
+measure and reduce clinical variation. Customers include Seattle Children's, Memorial Hermann, Children's
+Minnesota, USA Health and Kittitas Valley Healthcare.
+
+As of the 2026-09-07 enrichment pass, AdaptX publishes **no public API**: no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL/Postman description, no first-party SDK, no MCP server, and no A2A
+agent card. See `apis.yml` `x-coverage` for the probed evidence.
+
+- https://www.adaptx.com/
+- https://github.com/MDmetrix

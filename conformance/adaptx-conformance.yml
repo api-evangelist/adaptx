@@ -1,0 +1,38 @@
+generated: '2026-09-07'
+method: searched
+source: https://www.adaptx.com/
+note: >-
+  AdaptX publishes no OpenAPI, AsyncAPI, GraphQL SDL or other machine-readable contract, so no
+  API-level conformance (oauth2, oidc, rfc9457, pagination, idempotency, FHIR) can be derived or
+  asserted. The single published compliance claim is a SOC 2 Type II attestation, carried as an
+  AICPA SOC badge in the site footer; AdaptX publishes no trust center, audit report request page,
+  or certification detail page alongside it. Its market (US hospital clinical data) has HIPAA and
+  HL7/FHIR as the obvious domain standards, but AdaptX makes no public FHIR or HL7 conformance
+  claim and ships no contract in which one could be declared, so none is recorded here.
+conformance:
+- id: soc2-type-ii
+  conforms: true
+  evidence: https://www.adaptx.com/
+  detail: >-
+    "SOC 2 Type II Certified" AICPA SOC badge rendered in the site footer (image alt text
+    "SOC 2 Type II Certified"). No report, auditor, scope or period is published.
+  method: searched
+- id: hipaa
+  conforms: null
+  evidence: https://www.adaptx.com/privacy-policy
+  detail: >-
+    AdaptX processes protected health information from hospital EMR systems and therefore operates
+    as a HIPAA business associate, but no public HIPAA compliance statement or BAA page was found
+    on the marketing site. Recorded as unknown rather than asserted.
+  method: searched
+- id: fhir
+  conforms: false
+  evidence: https://www.adaptx.com/solutions
+  detail: >-
+    No FHIR, HL7v2, USCDI or SMART-on-FHIR claim appears anywhere on the public site, and there is
+    no contract in which such a claim could be declared. Absence, not a failure.
+  method: searched
+domain_standard: null
+domain_standard_note: >-
+  Reward-only check. AdaptX's sector has domain standards (HL7 FHIR, USCDI), but AdaptX declares
+  none in any published contract, so nothing is claimed here.

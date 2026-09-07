@@ -1,0 +1,20 @@
+generated: '2026-09-07'
+method: searched
+source: https://www.adaptx.com/
+plan_count: 0
+note: >-
+  AdaptX publishes no pricing page and no plans. https://www.adaptx.com/pricing returns 404 and no
+  pricing link appears in the site navigation or sitemap (74 URLs, none pricing-related). The
+  commercial motion is an enterprise contract with a health system, entered through the
+  "Request a demo" (https://www.adaptx.com/request-demo) and "Request info"
+  (https://www.adaptx.com/request-info) forms. An honest zero: nothing is priced publicly.
+plans: []
+signup:
+  self_serve: false
+  path: https://www.adaptx.com/request-demo
+  note: Demo/contact request form only. There is no self-serve sign-up, trial, or account creation.
+evidence:
+- url: https://www.adaptx.com/pricing
+  status: 404
+- url: https://www.adaptx.com/request-demo
+  status: 200

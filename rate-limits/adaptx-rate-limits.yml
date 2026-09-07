@@ -1,0 +1,18 @@
+generated: '2026-09-07'
+method: searched
+source: https://www.adaptx.com/
+limit_count: 0
+note: >-
+  No rate limits are documented, because no public API is documented. AdaptX publishes no developer
+  portal, API reference, or machine-readable description, so there is no documented quota, window,
+  burst allowance, exhaustion status code, or RateLimit-* / Retry-After response-header contract to
+  record. An honest zero, not an unchecked field.
+rate_limits: []
+headers: []
+evidence:
+- url: https://www.adaptx.com/developers
+  status: 404
+- url: https://www.adaptx.com/api
+  status: 404
+- url: https://www.adaptx.com/docs
+  status: 404

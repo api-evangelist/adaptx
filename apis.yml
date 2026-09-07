@@ -1,17 +1,35 @@
 aid: adaptx
 name: AdaptX
-description: 'AdaptX is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  AdaptX is a Seattle-based clinical performance management company (founded 2016 as MDMetrix,
+  renamed AdaptX in 2021) whose self-serve platform reads a hospital's existing electronic medical
+  record data and turns it into near-real-time analytics that clinical, quality, operational and
+  finance leaders use to measure and reduce clinical variation. Customers include Seattle Children's,
+  Memorial Hermann, Children's Minnesota, USA Health and Kittitas Valley Healthcare, with published
+  case studies covering surgical capacity, emergency department time-to-triage, length of stay,
+  anesthetic greenhouse-gas reduction and health-equity stratification. The product is delivered as a
+  hosted SaaS application on AWS to contracted health systems; as of this profiling pass AdaptX
+  publishes no public developer portal, API reference, or machine-readable API description.
+image: https://cdn.prod.website-files.com/60a92df620b4624c09b5ac26/60fdb4f81a5ab2a0549dfbd7_Adaptx_webclip-01.png
 url: https://raw.githubusercontent.com/api-evangelist/adaptx/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-09-07'
 modified: '2026-09-07'
 tags:
 - Company
+- Health Care
+- Healthcare Analytics
+- Clinical Data
+- Electronic Medical Records
+- Hospital Operations
+- Quality Improvement
+- Business Intelligence
+- SaaS
+- Seattle
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +38,49 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.adaptx.com/
+- type: PrivacyPolicy
+  url: https://www.adaptx.com/privacy-policy
+- type: Support
+  url: https://www.adaptx.com/request-info
+- type: GitHubOrganization
+  url: https://github.com/MDmetrix
+- type: Newsroom
+  url: https://www.adaptx.com/news
+- type: Compliance
+  url: conformance/adaptx-conformance.yml
+- type: Conformance
+  url: conformance/adaptx-conformance.yml
+- type: LLMsTxt
+  url: llms/adaptx-llms.txt
+- type: DomainSecurity
+  url: security/adaptx-domain-security.yml
+- type: Plans
+  url: plans/adaptx-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/adaptx-rate-limits.yml
+x-enrichment:
+  date: '2026-09-07'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    AdaptX sells a hosted clinical-analytics application that its own team wires into a health
+    system's EMR under contract — its 74-URL sitemap contains no developer, API, or docs page,
+    /developers /api /docs all 404, and api./app./developer./docs.adaptx.com do not resolve in
+    public DNS at all, so there is no developer program to gate or to read.
+  evidence:
+  - url: https://www.adaptx.com/developers
+    status: 404
+  - url: https://www.adaptx.com/docs
+    status: 404
+  - url: https://www.adaptx.com/openapi.json
+    status: 404
+  - url: https://www.adaptx.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.adaptx.com/sitemap.xml
+    status: 200
+  checked: '2026-09-07'
